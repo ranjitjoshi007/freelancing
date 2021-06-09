@@ -1,0 +1,27 @@
+.dashboard-container{margin-top: 60px;padding-top: 10px;}
+.dash-bg{background-color: #f9f9f9;padding-bottom: 30px;}
+.card-bg{background-color:white;box-shadow: 0 .125rem .25rem rgba(0,0,0,.175)!important;}
+.arrow-border{width: 25px;height: 25px;padding-left: 6px;padding-top: 2px;}
+.selected-arrow{width: 25px;height: 25px;padding-left: 8px;padding-top: 2px; background-color: #1fa4dd; border-color: #1fa4dd !important;}
+.button-details{background-color: #19a5de;border-color: #19a5de;color: white;}
+mat-slider {width: 300px;}
+
+.fl-blue-text{font-family: Roboto;font-size: 14px;font-weight: normal;font-stretch: normal;font-style: normal;line-height: normal;letter-spacing: normal;text-align: left;color: #1fa4dd;}
+.fl-blue-text-secondary{ font-family: Roboto;font-size: 12px;font-weight: normal;font-stretch: normal;font-style: normal;line-height: normal;letter-spacing: normal;text-align: left;color: #2eb2ff;}
+.fl-blue-text-card-13{ font-size: 13px;font-weight: normal;font-stretch: normal;font-style: normal;line-height: normal;letter-spacing: normal;text-align: left;color: #304156; padding-left:5px ;}
+.fl-blue-text-card-14{ font-family: Roboto;font-size: 14px;font-weight: 500;font-stretch: normal;font-style: normal;line-height: normal;letter-spacing: normal;text-align: left;color: #304156;padding-left:5px ;}
+.fl-age{font-family: Roboto;font-size: 16px;font-weight: 500;font-stretch: normal;font-style: normal;line-height: normal;letter-spacing: normal;text-align: left;color: #99a1ad;}
+.fl-normal-text{font-family: Roboto;font-size: 14px;font-weight: normal;font-stretch: normal;font-style: normal;line-height: normal;letter-spacing: normal;text-align: left;color: #304156;}
+
+:host ::ng-deep .fl-slider .mat-slider-track-fill {background-color: #ff8b46;border-color: #ff8b46;}
+:host ::ng-deep .fl-slider .mat-slider-thumb-label {background-color: #ff8b46;border-color: #ff8b46}
+:host ::ng-deep .fl-slider .mat-slider-thumb {background-color:  #ff8b46;border-color: #ff8b46}  
+:host ::ng-deep .fl-slider .mat-slider-thumb {background-color: #ff8b46;border-color: #ff8b46}
+:host ::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {background-color: rgba(0, 0, 0, 0);}
+
+:host ::ng-deep .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{border-color:#ff8b46; }
+:host ::ng-deep  .mat-radio-button.mat-accent .mat-radio-inner-circle{color:#ff8b46;background-color:#ff8b46;}
+:host ::ng-deep  .mat-radio-button.mat-accent .mat-radio-ripple .mat-ripple-element {background-color:#ff8b46;}
+
+.card-b-shadow{box-shadow: 0 0 10px 0 rgba(27, 28, 31, 0.07);border: solid 1px #e6eaee;background-color: #ffffff;border-radius: 4px;}
+.outer-card-b-shadow{border-radius: 5px;box-shadow: 0px 2px 13px 0 rgba(88, 92, 101, 0.3);background-color: #ffffff;}

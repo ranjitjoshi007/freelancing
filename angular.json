@@ -24,7 +24,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/custom-theme.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css",
+              "node_modules/font-awesome/css/font-awesome.min.css"
             ],
             "scripts": []
           },
@@ -119,6 +122,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "FLTest"
+    }
+  },
+  "defaultProject": "FLTest",
+  "cli": {
+    "analytics": "adb38d73-b7ac-4bd8-a1ba-e81c3239eccb"
+  }
 }

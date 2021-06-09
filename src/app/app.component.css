@@ -1,0 +1,2 @@
+.badge:after{content:"1";position: absolute;background: #ff3d57;height: 15px;top:1rem;right:6.2rem;width:15px;text-align: center;line-height: 15px;font-size: 0.7rem;border-radius: 50%;color:white;
+}
