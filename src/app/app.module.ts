@@ -15,6 +15,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatRadioModule} from '@angular/material/radio';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import {NgbCarouselModule} from '@ng-bootstrap/ng-bootstrap';
+import {MatBadgeModule} from '@angular/material/badge';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +36,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     MatIconModule,
     MatSelectModule,
     MatSliderModule,
-    MatRadioModule
+    MatRadioModule,
+    NgbCarouselModule,
+    MatBadgeModule
   ],
   providers: [
     {provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: {floatLabel: 'always'}}

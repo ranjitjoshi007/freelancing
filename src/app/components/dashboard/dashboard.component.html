@@ -1,129 +1,159 @@
 <div class="dashboard-container dash-bg col-md-12 p-3">
     <div class="row justify-content-between">
-        <mat-card class="col-md-7 card-bg mat-card m-4 outer-card-b-shadow">
-            <div class="p-2">
-                <div class="fl-text-h1-primary" >
-                Welcome <span class="fl-text-h1-primary" style="font-weight: bold;" >Leo Langlois</span>
+        <div class="col-md-8 mb-4">
+            <mat-card class="card-bg mat-card outer-card-b-shadow h-100">
+                <div class="p-2">
+                    <div class="fl-text-h1-primary" >
+                    Welcome <span class="fl-text-h1-primary" style="font-weight: bold;" >Leo Langlois</span>
+                    </div>
+                    <div class="fl-text-h2-primary pt-3">
+                        We're Super Excited too have you on board.    
+                    </div>
                 </div>
-                <div class="fl-text-h2-primary pt-3">
-                    We're Super Excited too have you on board.    
-                </div>
-            </div>
-        </mat-card>
-        <mat-card class="col-md-4 card-bg m-4 outer-card-b-shadow">
-            <div class="">
-                <div class="fl-text-b-primary">Upcomming Appoinments</div>
-                <div class="row align-items-center  pt-3"> 
-                    <div class="col-md-2">
-                        <div class=" border rounded-circle arrow-border">
-                            <i class="fa fa-angle-left" aria-hidden="true" style="font-size: 17px;font-weight: bold;color: #1fa4dd;"></i>
-                        </div>
-                    </div> 
-                    <div class="col-md-8 p-0">
-                        <div class="row "> 
-                            <div class="col-md-4">
-                                <img alt="profile" class="profile-image" src="assets/images/profile.jpg">
+            </mat-card>
+        </div>
+        <div class="col-md-4 mb-4">
+            <mat-card class="card-bg outer-card-b-shadow">
+                <div class="">
+                    <div class="fl-text-b-primary">Upcomming Appoinments</div>
+                    <ngb-carousel [showNavigationArrows]="true" [showNavigationIndicators]="false">
+                        <ng-template ngbSlide *ngFor="let image of data">
+                                <div class="justify-content-center pt-4 px-5 row"> 
+                                    <div class="col-3">
+                                        <img alt="profile" class="profile-image" src="assets/images/profile.jpg">
+                                    </div>
+                                    <div class="col-7">
+                                        <div class="fl-text-b-secondary">Dr. Shaun Marsh</div>
+                                        <div class="d-flex flex-wrap"> 
+                                            <span class="pr-2"><i class="fa fa-clock-o" style="font-size: 19px;color: #9b9b9b;" aria-hidden="true"></i> </span> 
+                                            <span class="fl-text-b-secondary px-2">12:30pm </span> 
+                                            <span class="text-muted" style="font-size: 12px;">Sep 16, 2020 </span> 
+                                        </div>
+                                    </div>
+                                    <div class="text-center mt-2">
+                                        <button class="btn button-details">View Details</button>
+                                    </div>
+                                </div>
+                        </ng-template>
+                        
+                        </ngb-carousel>
+                    <!-- <div class="row align-items-center  pt-3"> 
+                        <div class="col-md-2">
+                            <div class=" border rounded-circle arrow-border">
+                                <i class="fa fa-angle-left" aria-hidden="true" style="font-size: 17px;font-weight: bold;color: #1fa4dd;"></i>
                             </div>
-                            <div class="col-md-7">
-                                <div class="row fl-text-b-secondary">Dr. Shaun Marsh</div>
-                                <div class="row justify-content-between"> 
-                                    <div class=""><i class="fa fa-clock-o" style="font-size: 19px;color: #9b9b9b;" aria-hidden="true"></i> </div> 
-                                    <div class="fl-text-b-secondary">12:30pm </div> 
-                                    <div class="text-muted" style="font-size: 12px;">Sep 16, 2020 </div> 
+                        </div> 
+                        <div class="col-md-8 p-0">
+                            <div class="row "> 
+                                <div class="col-md-4">
+                                    <img alt="profile" class="profile-image" src="assets/images/profile.jpg">
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="row fl-text-b-secondary">Dr. Shaun Marsh</div>
+                                    <div class="row justify-content-between"> 
+                                        <div class=""><i class="fa fa-clock-o" style="font-size: 19px;color: #9b9b9b;" aria-hidden="true"></i> </div> 
+                                        <div class="fl-text-b-secondary">12:30pm </div> 
+                                        <div class="text-muted" style="font-size: 12px;">Sep 16, 2020 </div> 
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class=" border rounded-circle selected-arrow">
-                            <i class="fa fa-angle-right" aria-hidden="true" style="font-size: 17px; font-weight: bold; color: white;"></i>
-                        </div>
-                    </div> 
+                        <div class="col-md-2">
+                            <div class=" border rounded-circle selected-arrow">
+                                <i class="fa fa-angle-right" aria-hidden="true" style="font-size: 17px; font-weight: bold; color: white;"></i>
+                            </div>
+                        </div> 
+                    </div> -->
+                  
+    
                 </div>
-                <div class="row justify-content-center mt-2">
-                    <button class="btn button-details">View Details</button>
-                </div>
-
-            </div>
-        </mat-card>
+            </mat-card>
+        </div>
     </div>
     <div class="card-bg mx-2 outer-card-b-shadow">
         <div class="col-md-12">
             <div class="px-3 pt-3 row justify-content-between">
-                <mat-form-field class="example-form-field">
-                    <mat-label>Location</mat-label>
-                    <input matInput type="text" placeholder="City State or Zip">
+                <div class="col-md-3">
+                    <mat-form-field class="w-100">
+                        <mat-label>Location</mat-label>
+                        <input matInput type="text" placeholder="City State or Zip">
                         <mat-icon matSuffix>search</mat-icon>
-                </mat-form-field> 
-                <div class="row" style="width: 250px;">
-                    <mat-label class="col-md-12 text-muted" style="font-size: 10px;">Within Distance</mat-label>
-                    <mat-slider class="fl-slider col-md-12 pb-0" min="0"max="25" ></mat-slider>
-                    <div class="col-md-12 justify-content-between row p-0 fl-normal-text" style="width: 300px;">
+                    </mat-form-field> 
+                </div>
+                <div class="col-md-3">
+                    <mat-label class="w-100 text-muted" style="font-size: 10px;">Within Distance</mat-label>
+                    <mat-slider class="fl-slider w-100 pb-0" min="0"max="25" ></mat-slider>
+                    <div class="w-100 justify-content-between d-flex">
                         <span class="text-small pl-3">0 mi</span>
                         <span class="text-small">25 mi</span>
                     </div>
                 </div>
-                    
-                <mat-form-field class="demo-full-width" appearance="fill">
+                <div class="col-md-2">
+                <mat-form-field class="w-100" appearance="fill">
                     <select matNativeControl >
                     <option value="sp" selected>Insuarance</option>
                     <option value="valid" >Valid option</option>
                     <option value="invalid">Invalid option</option>
                     </select>
                 </mat-form-field>
-                    
-                <mat-form-field class="demo-full-width" appearance="fill">
+                </div>
+                <div class="col-md-2">
+                <mat-form-field class="w-100" appearance="fill">
                     <select matNativeControl >
                     <option value="sp" selected>select Languages</option>
                     <option value="valid" >Valid option</option>
                     <option value="invalid">Invalid option</option>
                     </select>
                 </mat-form-field>
-                    
-                <mat-form-field class="demo-full-width" appearance="fill">
+                </div>
+                <div class="col-md-2">
+                <mat-form-field class="w-100" appearance="fill">
                     <select matNativeControl >
                     <option value="sp" selected>select Specialities</option>
                     <option value="valid" >Valid option</option>
                     <option value="invalid">Invalid option</option>
                     </select>
                 </mat-form-field>
+                </div>
             </div>
         </div>  
         <div class="col-md-12">
-            <div class="px-3 row justify-content-between">
-                <div class="row" style="width: 250px;">
-                    <mat-label class="col-md-12 text-muted" style="font-size: 10px;">Gender</mat-label>
+            <div class="px-3 row align-items-center">
+                <div class="col-md-3">
+                    <mat-label class="d-block text-muted w-100 mb-1" style="font-size: 10px;">Gender</mat-label>
                     <mat-radio-group class="pl-3" aria-label="Select an option" [ngModel]="'male'" >
-                        <mat-radio-button  class="fl-text-b-secondary pr-1" value="male" selected>Male </mat-radio-button>
+                        <mat-radio-button  class="fl-text-b-secondary pe-2" value="male" selected>Male </mat-radio-button>
                         <mat-radio-button class="fl-text-b-secondary" value="female">Female</mat-radio-button>
                       </mat-radio-group>
                 </div>
-                
-
-                  <mat-form-field class="demo-full-width" appearance="fill">
+                <div class="col-md-3">
+                  <mat-form-field class="w-100" appearance="fill">
                     <select matNativeControl >
                     <option value="sp" selected>Select Affilations</option>
                     <option value="valid" >Valid option</option>
                     <option value="invalid">Invalid option</option>
                     </select>
                 </mat-form-field>
-                    
-                <mat-form-field class="demo-full-width" appearance="fill">
+                </div>
+                <div class="col-md-2">
+                <mat-form-field class="w-100" appearance="fill">
                     <select matNativeControl >
                     <option value="sp" selected>select Provider Types</option>
                     <option value="valid" >Valid option</option>
                     <option value="invalid">Invalid option</option>
                     </select>
                 </mat-form-field>
-                    
-                <mat-form-field class="demo-full-width" appearance="fill">
+                </div>
+                <div class="col-md-2">
+                <mat-form-field class="w-100" appearance="fill">
                     <select matNativeControl >
                     <option value="sp" selected>select Provider Sub Types</option>
                     <option value="valid" >Valid option</option>
                     <option value="invalid">Invalid option</option>
                     </select>
                 </mat-form-field>
-                <div class="justify-content-center mt-2">
+                </div>
+                <div class="col-md-2">
                     <button class="btn button-details">Reset Filters</button>
                 </div>
             </div>
